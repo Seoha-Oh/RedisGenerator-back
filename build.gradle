@@ -24,6 +24,11 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+	// https://mvnrepository.com/artifact/com.github.docker-java/docker-java
+	implementation group: 'com.github.docker-java', name: 'docker-java', version: '3.2.13'
+
+
 }
 
 tasks.named('test') {
